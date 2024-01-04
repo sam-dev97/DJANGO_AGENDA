@@ -1,0 +1,40 @@
+criar projeto:
+	python -m venv venv
+
+	.\venv\Scripts\Activate.ps1
+
+criar pasta django: django-admin startproject nomeDoProjeto
+
+apagar pasta com terminal: rm -Rf nomeDaPasta
+
+
+
+1. iniciar venv e ativar
+
+2. instalar django
+
+3. criar projeto
+
+4. configurar git
+
+5. criar app
+
+6. criar pasta de templates staticos e gerais
+
+7. adicionar o caminho dos templates nas settings do project
+
+8. crar o STATICFILES_DIR para os arquivos estáticos
+	STATICFILES_DIRS = ( BASE_DIR / 'nome da pasta estática')
+
+9. criar os templates do app (template/contatc/index.html) e extender o template base com extends do djangohtml
+
+10. criar urls.py e configurar de acordo
+
+11. Criar a view no arquivo views.py -> def index(request) return render etc etc
+
+12. no urls.py do app importar a view, criar um namespacing e configurar a url com a view designada
+
+13. importar um include na urls do project e setar a raiz do site para a url do app contatcs
+	path("", include('contact.urls'))
+
+
