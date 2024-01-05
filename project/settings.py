@@ -119,9 +119,20 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+#declaração do local dos static filles
 STATICFILES_DIRS = [
     BASE_DIR / 'base_static'
 ]
+
+#collectstatic setar onde vai ser coletado determinado file
+STATIC_ROOT = BASE_DIR / 'static'
+
+#arquivos enviados pelo usuário, fotos etc
+MEDIA_URL = 'media/'
+
+#arquivos enviados para o usuário
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

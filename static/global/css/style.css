@@ -1,0 +1,68 @@
+/* CSS Reset */
+/* Box sizing rules */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+/*Remove default margin */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, figure, hr {
+    margin: 0;
+}
+/* Remove list styles on ul, ol elements */
+ul, ol {
+    padding: 0;
+    list-style: none;
+}
+/* Set core body defaults */
+body {
+    line-height: 1.6;
+}
+/* Remove text indentation from blockquote elements */
+blockquote {
+    margin: 0;
+}
+/* Reset form elements to make them consistent across browsers */
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+}
+/* Remove the inheritance of text transform in button and select elements */
+button, select {
+    text-transform: none;
+}
+/* Correct font size inheritance for preformatted text */
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+/* Remove background and border in IE 8 and below */
+button, input {
+    background: none;
+    border: none;
+}
+/* Reset focus styles for some input types in IE */
+button, input, select, textarea {
+    outline: none;
+}
+/* Apply cursor pointer for clickable elements */
+a, button {
+    cursor: pointer;
+}
+/* Make responsive images and videos retain their max-width of 100% */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+/* Hide overflow on body */
+body {
+    overflow-x: hidden;
+}
+/* Optional: Add your own custom styles below this line */
+
+
+body{
+background: lightgray;
+}

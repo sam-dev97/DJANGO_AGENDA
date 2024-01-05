@@ -36,5 +36,7 @@ apagar pasta com terminal: rm -Rf nomeDaPasta
 
 13. importar um include na urls do project e setar a raiz do site para a url do app contatcs
 	path("", include('contact.urls'))
-
+	
+14. carregar o css: no arquivo base.html usar o load do djhtml para carregar o arquivo estático de css,
+	style.css, usar esse caminho a depender: {% static 'global/css/style.css' %}
 
