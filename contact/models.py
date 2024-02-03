@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.contrib.auth.models import User
 # Create your models here.
 #id (primary key - automático) 
 #nome, sobrenome telefone
@@ -47,7 +48,11 @@ class Contact(models.Model):
                                 blank=True,
                                 null=True
                                 )
-    
+    owner = models.ForeignKey(User,
+                                on_delete=models.SET_NULL,
+                                blank=True,
+                                null=True
+                                )
     
     
     def __str__(self) -> str:
