@@ -2,12 +2,18 @@
 
 {% block content %}
   <div class="form-wrapper">
+
     <h2>Contact</h2>
-
-    <form action="{{ form_action }}" method="POST" enctype="multipart/form-data">
-      {% csrf_token %}
-
+    
+    <form 
+      action="{{ form_action }}"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      {% csrf_token %}      
+      
       <div class="form-content">
+
         {% for field in form %}
           <div class="form-group">
             <label for="{{ field.id_for_label }}">{{ field.label }}</label>
@@ -21,7 +27,7 @@
 
           {% if field.name == 'picture' and field.value.url %}
             <div class="form-group">
-              <img src="{{ field.value.url }}" alt="" />
+              <img src="{{ field.value.url }}" alt="">
             </div>
           {% endif %}
         {% endfor %}
@@ -30,7 +36,9 @@
       {% if form.non_field_errors %}
         <div class="form-content">
           <div class="form-group">
-            <div class="message error">{{ form.non_field_errors }}</div>
+            <div class="message error">
+              {{ form.non_field_errors }}
+            </div>
           </div>
         </div>
       {% endif %}
@@ -40,6 +48,7 @@
           <button class="btn" type="submit">Send</button>
         </div>
       </div>
+
     </form>
   </div>
-{% endblock %}
+{% endblock content %}
