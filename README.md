@@ -61,4 +61,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issue
 
 ## Autor
 
-Seu Nome vivatecnosams@gmail.com
+Samuel Santos - vivatecnosams@gmail.com
